@@ -15,10 +15,10 @@ const {
 
 router.get("/export-users", protect, exportUsersToExcel);
 router.get("/export-employee", protect, exportEMployeeToExcel);
-router.get("/users", protect, getAllUsers); // List all users
-router.get("/employees", protect, getEmployeeProfiles); // List all employee profiles
-router.delete("/user/:id", protect, deleteUserByAdmin); // Delete any user
-router.post("/employee", protect, createEmployeeByAdmin); // Create employee with user
+router.get("/users", protect, getAllUsers); 
+router.get("/employees", protect, getEmployeeProfiles); 
+router.delete("/user/:id", protect, deleteUserByAdmin); 
+router.post("/employee", protect, createEmployeeByAdmin); 
 router.get("/usercount", getUserCounts);
 router.get("/employeecount", getEmployeeCount);
 router.get("/user-role-count", protect, getUserCountByRole);

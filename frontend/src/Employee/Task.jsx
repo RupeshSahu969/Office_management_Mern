@@ -124,7 +124,6 @@ const handleChange=(e)=>{
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Due Date */}
           <div className="mb-4">
             <label className="block text-gray-700">Due Date</label>
             <input
@@ -132,12 +131,9 @@ const handleChange=(e)=>{
               name='dueDate'
               value={formdata.dueDate}
               onChange={handleChange}
-              // onChange={(e) => setFormData(e.target.value)}
               className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md"
             />
           </div>
-
-          {/* Status */}
           <div className="mb-4">
             <label className="block text-gray-700">Status</label>
             <select
